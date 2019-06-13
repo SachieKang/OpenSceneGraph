@@ -52,9 +52,9 @@ ENDIF()
 
 IF(ANDROID)
     SET(OSG_WINDOWING_SYSTEM "None" CACHE STRING "Windowing system type for graphics window creation; options: None.")
-ELSEIF(WIN32)
+ELSIF(WIN32)
     SET(OSG_WINDOWING_SYSTEM "Win32" CACHE STRING "Windowing system type for graphics window creation; options: Win32 or None.")
-ELSEIF(APPLE)
+ELSIF(APPLE)
     # custom option to flag an iOS build
     OPTION(OSG_BUILD_PLATFORM_IPHONE "Enable IPhoneSDK Device support" OFF)
 
